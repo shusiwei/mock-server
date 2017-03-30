@@ -6,6 +6,8 @@ a simple http server by express for mock data
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:3001
+# server at localhost:3001
 npm run start
 ```
+
+open <http://localhost:3001/> by browser.
