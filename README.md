@@ -1,6 +1,6 @@
 a simple http server by express for mock data
 
-## Build Setup
+## Setup
 
 ``` bash
 # install dependencies
