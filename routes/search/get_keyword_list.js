@@ -6,7 +6,7 @@ Random.extend({
 });
 
 module.exports = function (req, res) {
-  const {keyword} = req.query;
+  const {keyword} = req.method === 'POST' ? req.body : req.query;
   const result = {};
 
   if (!keyword) {
@@ -22,7 +22,7 @@ module.exports = function (req, res) {
       status: 1,
       msg: 'ok',
       data: {
-        'list|0-10': [keyword + "@KEYWORD()"]
+        'list|0-10': [keyword + "@KEYWORD"]
       }
     }));
   };

@@ -4,11 +4,12 @@
   "description": "",
   "main": "service.js",
   "scripts": {
-    "start": "node service.js"
+    "start": "node server.js"
   },
   "author": "shusiwei",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "mockjs": "^1.0.1-beta3"
   }

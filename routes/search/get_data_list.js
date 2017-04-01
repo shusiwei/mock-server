@@ -35,7 +35,7 @@ Random.extend({
 });
 
 module.exports = function (req, res) {
-  const {keyword, page, pageSize} = req.query;
+  const {keyword, page, pageSize} = req.method === 'POST' ? req.body : req.query;
   const result = {};
 
   if (!keyword) {
