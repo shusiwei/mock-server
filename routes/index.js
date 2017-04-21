@@ -1,5 +1,7 @@
 const search = require('./search');
+const wifi = require('./wifi');
 
 module.exports = {
-  search: search
+  search: search,
+  wifi: wifi
 };
