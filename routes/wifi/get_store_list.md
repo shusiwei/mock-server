@@ -6,7 +6,7 @@ URL：<http://192.168.9.9:3001/wifi/get_store_list>
 ###接口入参：
 ```javascript
 {
-  city_id: Number // 城市ID,
+  city_code: Number // 城市ID,
   type: Number // 0：取, 1：还
 }
 ```

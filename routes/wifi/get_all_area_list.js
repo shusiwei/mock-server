@@ -5,7 +5,7 @@ Random.extend({
   get_all_area_list_img: (size, min, max) => Random.image(size, Random.color(), Random.color(), Random.ctitle(min, max)),
   get_all_area_list_hotList: () => {
     return Mock.mock({
-      'areaId|1-2000': 1,
+      'areaCode|1-2000': 1,
       'areaName': Random.ctitle(2, 4),
       'logo': '@IMG(200, 2, 4)',
       'price': 9.9
@@ -13,13 +13,13 @@ Random.extend({
   },
   get_all_area_list_list: () => () => {
     return Mock.mock({
-      'areaId|1-2000': 1,
+      'areaCode|1-2000': 1,
       'areaName': Random.ctitle(2, 4)
     });
   },
   get_all_area_list_cityList: () => {
     return Mock.mock({
-      'cityId|1-2000': 1,
+      'cityCode|1-2000': 1,
       'cityName': Random.city()
     });
   }

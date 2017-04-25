@@ -17,7 +17,7 @@ URL：<http://192.168.9.9:3001/wifi/get_all_area_list>
   data: {
     hotList: [
       {
-        areaId: Number // 地区ID
+        areaCode: Number // 地区ID
         areaName: String  // 地区名称
         logo: String  // 地区LOGO图片
         price: Number  // 租赁价格
@@ -28,7 +28,7 @@ URL：<http://192.168.9.9:3001/wifi/get_all_area_list>
     ] // 热门国家数据
     list: [
       {
-        areaId: Number // 地区ID
+        areaCode: Number // 地区ID
         areaName: String // 地区名称
       }, {
         ......
@@ -37,7 +37,7 @@ URL：<http://192.168.9.9:3001/wifi/get_all_area_list>
     ] // 全部国家数据,
     cityList: [
       {
-        cityId: Number // 城市ID
+        cityCode: Number // 城市ID
         cityName: String // 城市名称
       }, {
         ......

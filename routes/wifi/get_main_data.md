@@ -1,7 +1,7 @@
 ##Wifi首页
 ####mock:
 Method：GET/POST
-URL：<http://192.168.9.9:3001/wifi/get_main_data_list>
+URL：<http://192.168.9.9:3001/wifi/get_main_data>
 
 ###接口入参：
 ```javascript
@@ -18,7 +18,7 @@ URL：<http://192.168.9.9:3001/wifi/get_main_data_list>
     unpaid: 1 // 未支付订单总数，如用户未登录，则为0
     hotList: [
       {
-        areaId: Number // 地区ID
+        areaCode: Number // 地区ID
         areaName: String  // 地区名称
         logo: String  // 地区LOGO图片
         price: Number  // 租赁价格
