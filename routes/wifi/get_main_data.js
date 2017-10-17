@@ -1,5 +1,7 @@
 const Mock = require('mockjs');
 const Random = Mock.Random;
+const {decrypt} = require('crypto-js/aes');
+const Utf8 = require('crypto-js/enc-utf8');
 
 Random.extend({
   get_main_data_img: (size, min, max) => Random.image(size, Random.color(), Random.color(), Random.ctitle(min, max)),
@@ -14,6 +16,9 @@ Random.extend({
 });
 
 module.exports = function (req, res) {
+  const body = decrypt(req.body.payload, '1234').toString(Utf8);
+  console.log(body);
+
   res.send(Mock.mock({
     status: 1,
     msg: 'ok',

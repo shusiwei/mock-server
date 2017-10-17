@@ -12,7 +12,9 @@ Random.extend({
       'providerName': Random.ctitle(8, 14),
       'deposit|100-300': 1,
       'minDays|3-7': 1,
-      'flowSize|0-2048': 0
+      'flowSize|0-2048': 0,
+      'netType|1-2': 1,
+      'expType|0-2': 0
     });
   }
 });

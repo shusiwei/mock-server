@@ -1,7 +1,12 @@
+const express = require('express');
+const router = express.Router();
+
 const search = require('./search');
 const wifi = require('./wifi');
+const wireless = require('./wireless');
 
-module.exports = {
-  search: search,
-  wifi: wifi
-};
+router.use('/search', search);
+router.use('/wifi', wifi);
+router.use('/wireless', wireless);
+
+module.exports = router;

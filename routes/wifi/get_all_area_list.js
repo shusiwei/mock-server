@@ -6,12 +6,10 @@ Random.extend({
   get_all_area_list_hotList: () => {
     return Mock.mock({
       'areaCode|1-2000': 1,
-      'areaName': Random.ctitle(2, 4),
-      'logo': '@IMG(200, 2, 4)',
-      'price': 9.9
+      'areaName': Random.ctitle(2, 4)
     });
   },
-  get_all_area_list_list: () => () => {
+  get_all_area_list_areaList: () => {
     return Mock.mock({
       'areaCode|1-2000': 1,
       'areaName': Random.ctitle(2, 4)
@@ -30,9 +28,9 @@ module.exports = function (req, res) {
     status: 1,
     msg: 'ok',
     data: {
-      'list|0-10': ['@get_all_area_list_list'],
+      'areaList|0-10': ['@get_all_area_list_areaList'],
       'hotList|8': ["@get_all_area_list_hotList"],
-      'cityList|4-8': ["@get_all_area_list_cityList"]
+      'cityList|20-50': ["@get_all_area_list_cityList"]
     }
   }));
 };

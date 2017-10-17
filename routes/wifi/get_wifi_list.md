@@ -29,6 +29,7 @@ URL：<http://192.168.9.9:3001/wifi/get_wifi_list>
         minDays: Number // 最低租期
         flowSize: Number // 流量大小，如为不限流量则为0
         expType: Number // 领取方式0:快递  1：自取 2：快递&自取
+        netType: Number // 数据类型，1：4G, 2：3G （此处可能与供应商不同）
       }, {
         ......
       },

@@ -1,7 +1,7 @@
 ##Wifi订单下单接口
 ####mock:
 Method：GET/POST
-URL：<http://192.168.9.9:3001/wifi/get_all_area_list>
+URL：<http://192.168.9.9:3001/wifi/post_wifi_order>
 
 ###接口入参：
 ```javascript
